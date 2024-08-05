@@ -1,0 +1,306 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+       <img id="icon" src="data:image/jpeg;base64,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" alt="">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <b>MEN</b>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">T-Shirts</a></li>
+                  <li><a class="dropdown-item" href="#">Shirts</a></li>
+                  <li><a class="dropdown-item" href="#">Pants</a></li>
+                  <li><a class="dropdown-item" href="#">Inner wear</a></li>
+                  <li><a class="dropdown-item" href="#">Jackets</a></li>
+                  <li><a class="dropdown-item" href="#">Sweaters</a></li>
+                </ul>
+          </li>
+          &nbsp;&nbsp;&nbsp;
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <b>WOMEN</b>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Sarees</a></li>
+              <li><a class="dropdown-item" href="#">Jackets</a></li>
+              <li><a class="dropdown-item" href="#">Skirts</a></li>
+            </ul>
+          </li>
+          &nbsp;&nbsp;&nbsp;
+          <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <b>KIDS</b>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Party wear</a></li>
+                  <li><a class="dropdown-item" href="#">Dresses</a></li>
+                  <li><a class="dropdown-item" href="#">T-Shirts</a></li>
+                </ul>
+          </li>
+          &nbsp;&nbsp;&nbsp;
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <b>HOME&LIVING</b>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Bedsheets</a></li>
+              <li><a class="dropdown-item" href="#">Mattress</a></li>
+              <li><a class="dropdown-item" href="#">Floor lamps</a></li>
+            </ul>
+          </li>
+          &nbsp;&nbsp;&nbsp;
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <b>BEAUTY</b>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Perfume</a></li>
+              <li><a class="dropdown-item" href="#">Hair Gel</a></li>
+              <li><a class="dropdown-item" href="#">Shampoo</a></li>
+            </ul>
+          </li>
+          &nbsp;&nbsp;&nbsp;
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><b>STUDIO</b></a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2 enter" type="search" placeholder="Search for brands, products and more" aria-label="Search">
+          
+        </form>
+        &nbsp;&nbsp;&nbsp;
+        <div id="profile">
+            &nbsp;&nbsp; <i class="fa-solid fa-user"></i>
+            <p>Profile</p>
+        </div>
+        &nbsp;&nbsp;&nbsp;
+        <div id="wishlist">
+            &nbsp;&nbsp;&nbsp; <i class="fa-solid fa-heart"></i>
+            <p>Wishlist</p>
+        </div>
+        &nbsp;&nbsp;&nbsp;
+        <div id="bag">
+            &nbsp;<i class="fa-solid fa-bag-shopping"></i>
+            <p>Bag</p>
+        </div>
+        &nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+  </nav>
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <center>
+    <div class="carousel-inner" id="size">
+      <div class="carousel-item active">
+        <img src="images/image1.png" class="d-block w-100 "  alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/image2.png" class="d-block w-100 "  alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/image3.png" class="d-block w-100 "  alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </center>
+  </div>
+  <br><br>
+  <div class="row row-cols-2 row-cols-md-5 g-4">
+    <div class="col high">
+      <div class="card h-100  light">
+        <center>
+        <img src="images/shirt.jpg" class="card-img-top shirt" id="shirt" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Casual Shirts</h5>
+          <h2 class="card-text"> 50-70% OFF</h2>
+          <h5>Shop Now</h5>
+        </div>
+      </center>
+      </div>
+    </div>
+    <div class="col high">
+      <div class="card h-100 light" >
+        <center>
+        <img src="images/pant.jpg" class="card-img-top pant" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pants</h5>
+          <h2 class="card-text"> 50-80% OFF</h2>
+          <h5>Shop Now</h5>
+        </div>
+      </center>
+      </div>
+    </div>
+    <div class="col high">
+      <div class="card h-100  light"><center>
+        <img src="images/shoe.jpg" class="card-img-top shoe" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Branded Shoes</h5>
+          <h2 class="card-text"> 50-60% OFF</h2>
+          <h5>Shop Now</h5>
+        </div>
+        </center>
+      </div>
+    </div>
+    <div class="col high">
+      <div class="card h-100  light"><center>
+        <img src="images/jackets.jpg" class="card-img-top mobile" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Jackets</h5>
+          <h2 class="card-text"> 50-70% OFF</h2>
+          <h5>Shop Now</h5>
+        </div></center>
+      </div>
+    </div>
+    <div class="col high">
+        <div class="card h-100  light"><center>
+          <img src="images/mobile.jpg" class="card-img-top laptop" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Nokia</h5>
+          <h2 class="card-text"> 30-40% OFF</h2>
+          <h5>Shop Now</h5>
+          </div></center>
+        </div>
+      </div>
+      <div class="col high">
+        <div class="card h-100  light"><center>
+          <img src="images/tws.jpg" class="card-img-top tws" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">TWS</h5>
+          <h2 class="card-text"> 10-30% OFF</h2>
+          <h5>Shop Now</h5>
+          </div></center>
+        </div>
+      </div>
+      <div class="col high">
+        <div class="card h-100  light"><center>
+          <img src="images/bag.jpg" class="card-img-top bag" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Bag</h5>
+          <h2 class="card-text"> 20-30% OFF</h2>
+          <h5>Shop Now</h5>
+          </div></center>
+        </div>
+      </div>
+      <div class="col high">
+        <div class="card h-100  light"><center>
+          <img src="images/watch.jpg" class="card-img-top watch" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Watch</h5>
+          <h2 class="card-text"> 20-40% OFF</h2>
+          <h5>Shop Now</h5>
+          </div></center>
+        </div>
+      </div>
+      <div class="col high">
+        <div class="card h-100 light"><center>
+          <img src="images/sunglasses.jpg" class="card-img-top sunglasses" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">sunglasses</h5>
+          <h2 class="card-text"> 50-70% OFF</h2>
+          <h5>Shop Now</h5>
+          </div></center>
+        </div>
+      </div>
+      <div class="col high">
+        <div class="card h-100 light"><center>
+          <img src="images/sunglasses.jpg" class="card-img-top sunglasses" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">sunglasses</h5>
+          <h2 class="card-text"> 50-70% OFF</h2>
+          <h5>Shop Now</h5>
+          </div></center>
+        </div>
+      </div>
+      
+  </div>
+  <footer>
+    <br><br><br><br><br>
+    <div class="foot">
+    <div>
+      
+      <b>ONLINE SHOPPING</b>
+      
+      <ul style="list-style-type: none;" >
+        <br>
+        <li>Men</li>
+        <li>Women</li>
+        <li>Kids</li>
+        <li>Home & Living</li>
+        <li>Beauty</li>
+        <li>Gift Cards</li>
+        <li>Myntra Insider</li>
+      </ul>
+      <br>
+      <b>USEFUL LINKS</b>
+      
+      <ul style="list-style-type: none;">
+        <br>
+        <li>Blog</li>
+        <li>Careers</li>
+        <li>Site Map</li>
+        <li>Corporate Information</li>
+        <li>Whitehat</li>
+        <li>Cleartrip</li>
+      </ul>
+    </div>
+    
+    
+    <div>
+      <b>CUSTOMER POLICIES</b>
+      <ul style="list-style-type: none;">
+        <br>
+        <li>Contact Us</li>
+        <li>FAQ</li>
+        <li>T&C</li>
+        <li>Terms Of Use</li>
+        <li>Track Orders</li>
+        <li>Shipping</li>
+        <li>Cancellation</li>
+        <li>Returns</li>
+        <li>Privacy policy</li>
+        <li>Grievance Officer</li>
+      </ul>
+    </div>
+    <div>
+      <img class="pict1" src="images/pic1.png" alt="">
+    </div>
+    <div>
+      <img class="pict2" src="images/pic2.png" alt="">
+    </div>
+    <br>
+    
+  </div>
+  <div class="verylast">
+    <b>POPULAR SEARCHES</b>
+    <br>
+    <img class="atlast" src="images/last.png" alt="">
+  </div>
+  </footer>
+  
+</body>
+</html>
